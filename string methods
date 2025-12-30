@@ -1,0 +1,8 @@
+variable.length() gives you the length 
+variable.empty() if you give an empty input on the string 
+variable.clear() clears the name 
+variable.appeend( add to end of string ) adds the argument given into the end of the string
+variable.at(index) returns the index in the string like index = 0 that means the first letter  
+variable.insert(index, what you want to replace with) replaces the index with what you want to add 
+variable.find( what you wnt to find) tells you the first index of what you want to find 
+variable.erase (beginning index, ending index) erases between the indx 
