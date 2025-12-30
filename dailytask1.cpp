@@ -29,12 +29,12 @@ int main() {
     x = pow(x, 2);
     y = pow(y, 2);
     distance = sqrt(x + y);
-    basecost = c * 10;
+    basecost = distance * 10;
     cout << "--- CALCULATING FEES ---" << '\n';
-    cout << "Pilot: " << name << " Distance traveled: " << c
+    cout << "Pilot: " << name << " Distance traveled: " << distance
      << " lightyears Base fee: " << basecost << " credits" << '\n';
 
-    if(c > 50){
+    if(distance > 50){
         cout << "⚠️ Long Distance Surcharge Applied!"<<'\n';
         basecost += 100;
     }
@@ -43,7 +43,7 @@ int main() {
     }
     total_cost = basecost+( basecost* empire::TAX_RATE);
     
-    cout << "Tax (10%): " << c << " Credits" << " TOTAL COST: " << total_cost <<
+    cout << "Tax (10%): " << distance << " Credits" << " TOTAL COST: " << total_cost <<
     " Credits Integer format: " << int(total_cost);
 
 
