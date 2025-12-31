@@ -10,7 +10,7 @@ int main() {
         getline(cin, name);
     }
 
-    cout << "hello" << 67;
+    cout << "hello" << name;
 
     return 0;
 }
