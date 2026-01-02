@@ -2,13 +2,13 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Build active C++ to exe files",
+      "label": "Build active C++ to exefiles",
       "type": "shell",
       "command": "g++",
       "args": [
         "${file}",
         "-o",
-        "${workspaceFolder}\\exe files\\${fileBasenameNoExtension}.exe"
+        "${workspaceFolder}\\exefiles\\${fileBasenameNoExtension}.exe"
       ],
       "problemMatcher": ["$gcc"]
     },
@@ -18,9 +18,12 @@
       "command": "cmd",
       "args": [
         "/c",
-        "\"${workspaceFolder}\\exe files\\${fileBasenameNoExtension}.exe\" & pause"
+        "start",
+        "cmd",
+        "/k",
+        "${workspaceFolder}\\exefiles\\${fileBasenameNoExtension}.exe"
       ],
-      "dependsOn": "Build active C++ to exe files",
+      "dependsOn": "Build active C++ to exefiles",
       "group": { "kind": "build", "isDefault": true },
       "problemMatcher": []
     }
