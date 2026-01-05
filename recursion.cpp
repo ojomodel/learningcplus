@@ -7,9 +7,9 @@ void walk(int steps) {
     }
 }
 int factorial(int num) {
-    num * (num -1);
-    return factorial(num);
-    cout << "hello";
+    if (num <=1) return 1;
+    return num * factorial(num -1);
+    
     
 }
 //uses more memory and time 
@@ -18,6 +18,7 @@ int main() {
     //walk(100);
     int total = factorial(6);
     cout << total;
+    
 
     return 0;
 }

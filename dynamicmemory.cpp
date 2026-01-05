@@ -13,7 +13,7 @@ int main() {
     cout << "value: " << *pnum << '\n';
     delete pnum;
 
-    char *pgrades = NULL;
+    char *pgrades = NULL; // PGRADES is the array
     int size;
     cout << "How many grade to enter in: "; cin >> size;
     pgrades = new char[size];
