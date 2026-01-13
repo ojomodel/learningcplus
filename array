@@ -1,0 +1,15 @@
+#include <iostream>
+#include <vector>
+#include <array>
+using namespace std;
+
+int main() {
+    // int a[10];  // memory to fulfill the storage requirments of our array is allocated on the stack 
+    // int *b = new int[10]; // this is allocated on a heap
+    int a[10];
+    a[17] = 6;
+
+    array<int, 10> b;
+    b[17] = 6;
+    return 0;
+}
